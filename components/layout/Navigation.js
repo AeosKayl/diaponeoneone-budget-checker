@@ -1,18 +1,9 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import {
-  Fira_Code,
-  Inter,
-  Josefin_Sans,
-  Jost,
-  Limelight,
-  Montserrat,
-} from "next/font/google";
 
 import styles from "@/styles/Home.module.css";
 import classes from "./Navigation.module.css";
-const josefin = Josefin_Sans({ subsets: ["latin"] }); // you can replace Josefin_Sans with any of the imported fonts names, set the const name to an appropriate name and then use it to get the desired font
 
 const Navigation = () => {
   const router = useRouter();
