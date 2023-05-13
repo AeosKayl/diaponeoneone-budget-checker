@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
@@ -7,7 +7,10 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        {/* for the modal that I wouldve liked to use but lacked the time */}
+        <div id="backdrop-root"></div>
+        <div id="modal-root"></div>
       </body>
     </Html>
-  )
+  );
 }

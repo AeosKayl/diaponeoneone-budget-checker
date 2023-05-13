@@ -1,0 +1,21 @@
+.listContainer li {
+  padding: 0.5rem;
+}
+.container {
+  min-width: 23rem;
+}
+
+.container p {
+  font-size: 1.1rem;
+}
+.budgetInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .listContainer {
+    min-width: 50rem;
+    max-width: 50rem;
+  }
+}

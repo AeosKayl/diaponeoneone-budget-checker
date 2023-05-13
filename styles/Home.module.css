@@ -7,6 +7,11 @@
   min-height: 100vh;
 }
 
+.main h1,
+.main h2 {
+  text-align: center;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
@@ -52,6 +57,8 @@
   background: rgba(var(--card-rgb), 0);
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
+  /* added css styles */
+  text-align: center;
 }
 
 .card span {
@@ -67,9 +74,10 @@
 .card p {
   margin: 0;
   opacity: 0.6;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
+  /* font-size: 0.9rem; */
   line-height: 1.5;
-  max-width: 30ch;
+  /* max-width: 30ch; */
 }
 
 .center {
@@ -97,7 +105,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);

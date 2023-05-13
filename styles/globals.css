@@ -1,9 +1,9 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -93,11 +93,44 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  background-color: #d0f9ff;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+button {
+  padding: 0.75rem 1.5rem;
+  font-family: inherit;
+  font-size: large;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  color: rgb(3, 3, 3);
+  cursor: pointer;
+}
+
+button:hover,
+button:active:enabled {
+  background-color: #4bf07a;
+  border-color: #4bf07a;
+}
+fieldset {
+  padding: 1rem;
+}
+label {
+  font-size: 1rem;
+}
+legend {
+  text-align: center;
+  font-size: x-large;
+}
+section h1 {
+  font-size: 2rem;
 }
 
 @media (prefers-color-scheme: dark) {
