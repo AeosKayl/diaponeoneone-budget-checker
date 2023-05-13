@@ -1,38 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# diaponeoneone-budget-checker
+DiapOneOne is an app used to create a budget plan, choose items to be bought and then calculate prices, expenses...
+Mainly for parents who can't control their shopping urges.
 
-## Getting Started
+# Technology/methods
+- The app is a Next.js app and utilises the getStaticProps method to fetch data and SSG (static site generation) during the build process,which is used to prerender the pages with data
+if there's a request sent and it helps with SEO. 
+- It alsos uses Firebase as a database/backend via the REST API
 
-First, run the development server:
+## **Preview**
+The home page
+<img width="1100" alt="image" src="https://github.com/AeosKayl/diaponeoneone-budget-checker/assets/91140647/e9f955ad-cfd6-426b-961c-24d2a95599a4">
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+DIAP page
+<img width="1100" alt="image" src="https://github.com/AeosKayl/diaponeoneone-budget-checker/assets/91140647/858faf18-a292-4a03-a42f-8773c5c9a4a6">
+<img width="1062" alt="image" src="https://github.com/AeosKayl/diaponeoneone-budget-checker/assets/91140647/3017f5ad-9ba5-4613-aa8d-500f777edd7b">
+
+
+
+## **Before Installation**
+Make sure that you are using node.js version of 18.16.0 in order to avoid issues with npm packages
+if you have nvm installed, use the following code in your terminal to check if you have the mentioned version already
+
+```
+nvm list
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+if you have the version installed, type
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+nvm use 18.16.0
+```
+and you'll be using the above version of node
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+otherwise, you can install the required node version by visiting https://nodejs.org/en
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## **Installation**
+Open the folder in VSCode and using the terminal in the root folder type the following command to install
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+npm install
+```
 
-## Learn More
+## **Using the app in dev mode**
+To use the app in dev mode, run the following command in your terminal while you are in the root folder of the project
 
-To learn more about Next.js, take a look at the following resources:
+```
+npm run dev
+```
+This will start the project in development mode and run the app on localhost, you can then click on the link in the terminal to open the app in the browser
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Budget Planner
+You can then click on the DIAPP link in the navbar at the top or the explore button on the home page to get the the actual budget planner/checker page.
+Note that this is still in development and it will be prompt to changes and updates since all the functionalities that I wish to include are not there yet.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## **Usage**
+Just type a budget amount and click on the button to begin. Just for your info, the prices are not dynamic and do not reflect the actual prices of the items
+you may find in the dropdown menu.
+Nothing will happen if you go over budget, so go wild!
