@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-
+// the initial form component i used unsuccessfully
 const DiapForm = (props) => {
   const budgetInput = useRef();
   const quantityInput = useRef();

@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Card from "./Card";
 import classes from "./Modal.module.css";
 
+// using the modal we learned in Javascript 4 course
 const Backdrop = (props) => {
   return <div onClick={props.onClick} className={classes.backdrop} />;
 };

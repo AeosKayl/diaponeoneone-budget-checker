@@ -3,8 +3,9 @@ import { v4 as uuidv4 } from "uuid";
 import Card from "../ui/Card";
 import classes from "./BudgetItem.module.css";
 
+// final form item component that I use to create budget items in  the form on the budget page
 const BudgetItem = ({
-  items,
+  items, // getting the items dictionary to populate the select tag and its options
   quant,
   price,
   name,

@@ -10,7 +10,7 @@ import BudgetItem from "@/components/diapchecks/BudgetItem";
 import styles from "@/styles/BudgetPage.module.css";
 import classes from "@/components/ui/Card.module.css";
 
-const MAX_ITEMS = 6;
+const MAX_ITEMS = 6; // a constant used to set a limit on the amount of items that can be added in the form
 
 const BudgetPage = ({ items }) => {
   console.log(items);

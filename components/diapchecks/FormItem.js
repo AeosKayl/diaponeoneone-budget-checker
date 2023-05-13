@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Price from "./Price";
-
+// initial component used as formItem, failed to implement it properly
 // A reusable component that renders a dropdown menu for selectable items
 const DropdownMenu = ({ items, onChange }) => {
   // The state to store the selected item
@@ -12,7 +12,7 @@ const DropdownMenu = ({ items, onChange }) => {
   const handleSelect = (event) => {
     const value = event.target.value;
     setSelectedItem(value);
-    console.log(value);
+    // console.log(value);// for checking purposes
     onChange(value);
   };
 
