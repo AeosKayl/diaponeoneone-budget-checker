@@ -26,26 +26,26 @@ const BudgetListsPage = ({ budgetPlans }) => {
                 <h2>Budget DiapOne{index + 1}</h2>
                 <Card className={classes.budgetInfo}>
                   <p>
-                    <b>Date:</b> {plan.planItems[index].date}
+                    <b>Date:</b> {plan.planItems[index]?.date}
                   </p>
                   <p>
-                    <b>Budget:</b> {plan.planItems[index].budget} SEK
+                    <b>Budget:</b> {plan.planItems[index]?.budget} SEK
                   </p>
                   <p>
                     <b>Expenses:</b>{" "}
-                    {plan.planItems[index].budget -
-                      plan.planItems[index].remainingBudget}{" "}
+                    {plan.planItems[index]?.budget -
+                      plan.planItems[index]?.remainingBudget}{" "}
                     SEK
                   </p>
                   <p>
                     <b>Remaining Budget:</b>{" "}
-                    {plan.planItems[index].remainingBudget} SEK
+                    {plan.planItems[index]?.remainingBudget} SEK
                   </p>
                   <p>
-                    {plan.planItems[index].remainingBudget < 0
+                    {plan.planItems[index]?.remainingBudget < 0
                       ? `You smashed your budget and are in dept with ${-plan
-                          .planItems[index].remainingBudget} SEK`
-                      : `You restrained and still have ${plan.planItems[index].remainingBudget} SEK to spare`}
+                          .planItems[index]?.remainingBudget} SEK`
+                      : `You restrained and still have ${plan.planItems[index]?.remainingBudget} SEK to spare`}
                   </p>
                 </Card>
                 <section className={classes.listContainer}>

@@ -216,8 +216,8 @@
     grid-template-columns: repeat(2, 50%);
   }
 }
-
-@media (prefers-color-scheme: dark) {
+/* fix this so that it works properly if e.g windows uses dark theme on apps */
+/* @media (prefers-color-scheme: dark) {
   .vercelLogo {
     filter: invert(1);
   }
@@ -225,13 +225,13 @@
   .logo {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
-}
+} */
 
-@keyframes rotate {
+/* @keyframes rotate {
   from {
     transform: rotate(360deg);
   }
   to {
     transform: rotate(0deg);
   }
-}
+} */

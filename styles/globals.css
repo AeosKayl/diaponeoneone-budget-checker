@@ -39,8 +39,8 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 }
-
-@media (prefers-color-scheme: dark) {
+/* fix this so that it works properly if e.g windows uses dark theme on apps */
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -71,7 +71,7 @@
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
   }
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -133,8 +133,8 @@ section h1 {
   font-size: 2rem;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
+} */
